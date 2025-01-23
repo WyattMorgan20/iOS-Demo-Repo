@@ -29,15 +29,13 @@ class ViewController: UIViewController {
         
         // Check whether it is cold or hot
         // temperature > 60 (hot) otherwise, cold
-        var cold = false
-        var hot = false
         if temp! > 60 {
+            imageViewOL.image = UIImage(named: "Hot")
             outputOL.text = "It is hot outside🥵🔥"
-            hot = true
         }
         else{
+            imageViewOL.image = UIImage(named: "Cold")
             outputOL.text = "It is cold outside🥶❄️"
-            cold = true
         }
         
         // Display the appropriate image
