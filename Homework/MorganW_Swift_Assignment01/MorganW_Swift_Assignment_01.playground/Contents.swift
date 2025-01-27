@@ -38,6 +38,8 @@ print("----------------------")
 
 // 4. Write three statements about why Swift is a great language for beginners and developers.
 // Display the first two statements on one line and the third statement on the next line using print statements.
+print("Swift is a great language for beginners and developers because it is easy to read", "Swift is a great language for beginners and developers because it is easy to learn due to simplistic code")
+print("Swift is a great language for beginners and developers because it is easy to run due to it being very efficient")
 print("----------------------")
 // End of question 4
 
