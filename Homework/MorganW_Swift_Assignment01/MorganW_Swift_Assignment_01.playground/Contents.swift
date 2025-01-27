@@ -28,6 +28,10 @@ print("----------------------")
 // 3. Declare a variable with a value of 212°F (boiling point of water) in Fahrenheit, convert it to Celsius,
 // and round it to one decimal place. Print the result in this format:
 // "Temperature: 212°F is equivalent to ****°C."
+var far: Double = 212.0
+var cel = (far - 32) * 5 / 9
+var rounded = round(cel * 10) / 10
+print("Temperature: 212°F is equivalent to \(rounded)° C")
 print("----------------------")
 // End of question 3
 
