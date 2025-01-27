@@ -4,7 +4,12 @@ import UIKit
 // 1. In which year was the first version of the Swift programming language introduced?
 // Explain why Swift is considered a modern and user-friendly programming language.
 // Also, describe type safety and type inference in Swift with examples.
-print("Q1P1 - ")
+print("Q1P1 - 2014")
+print("Q1P2 - Swift is a very user friendly language, similar to python because it is easy to read and has simple ways of doing things such as printing using print(). It also is very fast and efficient.")
+print("Q1P3.1 - type safety allows the user to work with data of specific types (i.e. int, string, double, etc) in a monitored way to prevent runtime errors that might be caused by things like type mismatches.")
+print("ex: var name: String = Wyatt name cannot be used as any data type other than String unless properly converted")
+print("Q1P3.2 - type inference allows the user to set values to variables and it will automatically assume data variables for things which helps to clean up your code if you need")
+print("ex: var age = 23 will be inferred as an int automatically")
 print("----------------------")
 // End of question 1
 
