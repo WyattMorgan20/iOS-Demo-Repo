@@ -4,6 +4,7 @@ import UIKit
 // 1. In which year was the first version of the Swift programming language introduced?
 // Explain why Swift is considered a modern and user-friendly programming language.
 // Also, describe type safety and type inference in Swift with examples.
+print("Q1P1 - ")
 print("----------------------")
 // End of question 1
 
