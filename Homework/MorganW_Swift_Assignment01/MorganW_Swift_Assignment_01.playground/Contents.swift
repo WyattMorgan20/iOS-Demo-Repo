@@ -18,6 +18,9 @@ print("----------------------")
 // the area of a circle with a radius of 10.0 units using the formula: Area = pi * radius * radius.
 // Print the calculated area as shown in the sample output below:
 // "The area of the circle with radius 10.0 is **** square units."
+let pi: Double = 3.14
+var area = pi * 10.0 * 10.0
+print("The area of the circle with radius 10.0 is \(area) square units.")
 print("----------------------")
 // End of question 2
 
