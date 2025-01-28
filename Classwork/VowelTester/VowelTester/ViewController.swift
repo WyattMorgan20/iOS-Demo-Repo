@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBAction func testBTN(_ sender: UIButton) {
         var letter: String = input.text!
         
-        if letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u"{
+        if letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u" || letter == "A" || letter == "E" || letter == "I" || letter == "O" || letter == "U"{
             output.text = "\(letter) is a vowel!"
         }
         else{
