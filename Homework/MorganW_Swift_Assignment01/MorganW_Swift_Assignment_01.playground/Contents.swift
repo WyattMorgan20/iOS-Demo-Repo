@@ -83,8 +83,11 @@ print("----------------------")
 // Count the total number of characters excluding spaces and print them as individual characters separated by "+".
 // For example: "S+w+i+f+t+p+r+o+g+r+a+m+m+i+n+g+i+s+f+u+n"
 var text = "Swift programming is fun!"
+var letterCount = text.count
 var newText = text.filter {!$0.isWhitespace}
-
+var formatted = newText.map{String($0)}.joined(separator: "+")
+print(formatted)
+print("The number of letters is: \(letterCount)")
 print("----------------------")
 // End of question 7
 
