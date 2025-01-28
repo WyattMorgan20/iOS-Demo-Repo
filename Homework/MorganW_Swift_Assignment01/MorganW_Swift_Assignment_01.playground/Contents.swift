@@ -47,6 +47,10 @@ print("----------------------")
 // 5. Display the following using a single print statement:
 // "Swift is an intuitive, powerful, and safe programming language designed for iOS and other Apple platforms.
 // It offers modern features, concise syntax, and exceptional performance that developers love."
+print("""
+      Swift is an intuitive, powerful, and safe programming language designed for iOS and other Apple platforms.
+      It offers modern features, concise syntax, and exceptional performance that developers love.
+      """)
 print("----------------------")
 // End of question 5
 
