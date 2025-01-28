@@ -82,6 +82,9 @@ print("----------------------")
 // 7. Create a variable with the value "Swift programming is fun!".
 // Count the total number of characters excluding spaces and print them as individual characters separated by "+".
 // For example: "S+w+i+f+t+p+r+o+g+r+a+m+m+i+n+g+i+s+f+u+n"
+var text = "Swift programming is fun!"
+var newText = text.filter {!$0.isWhitespace}
+
 print("----------------------")
 // End of question 7
 
