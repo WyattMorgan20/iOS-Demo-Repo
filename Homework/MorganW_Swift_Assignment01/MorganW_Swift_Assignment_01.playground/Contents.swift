@@ -59,6 +59,22 @@ print("----------------------")
 // Write code to calculate their product and determine how many digits the product contains.
 // Print the result in this format:
 // "The product of <num1> and <num2> is ****, and it has **** digits."
+var num1: Int = 123
+var num2: Int = 456
+var product: Int = num1 * num2
+var count = 0
+var tempNum = product
+
+if product == 0{
+    count = 1
+}
+else{
+    while tempNum > 0 {
+        tempNum = tempNum / 10
+        count += 1
+    }
+}
+print("The product of \(num1) and \(num2) is \(product), and it has \(count) digits.")
 print("----------------------")
 // End of question 6
 
