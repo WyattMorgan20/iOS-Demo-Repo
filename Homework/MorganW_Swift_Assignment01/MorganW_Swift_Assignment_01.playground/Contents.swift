@@ -83,8 +83,11 @@ print("----------------------")
 // Count the total number of characters excluding spaces and print them as individual characters separated by "+".
 // For example: "S+w+i+f+t+p+r+o+g+r+a+m+m+i+n+g+i+s+f+u+n"
 var text = "Swift programming is fun!"
+var letterCount = text.count
 var newText = text.filter {!$0.isWhitespace}
-
+var formatted = newText.map{String($0)}.joined(separator: "+")
+print("The number of characters excluding spaces in the above text is \(letterCount) The modified text is:")
+print(formatted)
 print("----------------------")
 // End of question 7
 
@@ -94,6 +97,10 @@ print("----------------------")
 //Distance = velocity × time
 //Print the result in this format:
 //"The car traveled a distance of **** meters."
+var time = 12
+var velocity = 20
+var distance = velocity * time
+print("The car traveled a distance of \(distance) meters.")
 print("----------------------")
 // End of question 8
 
