@@ -123,6 +123,7 @@ if password == confirmPassword {
 else{
     print("Passwords doesn't matches")
 }
+// Password matches
 
 let currentYear = "2021"
 var enteredYear = "2020"
@@ -133,6 +134,7 @@ if currentYear.elementsEqual(enteredYear) == true{
 else{
     print("Entered year does not match with current year")
 }
+// Entered year does not match with current year
  
 var vehiclePoweredBy = "Diesel"
 
@@ -142,7 +144,7 @@ if vehiclePoweredBy != "Electricity" {
 else{
  print("Vehicle is eco-friendly")
 }
-
+// Vehicle is not eco-friendly
 
 let nameGiven = "Anthony Martial"
 var enteredName = "ANTHONY MARTIAL"
@@ -153,4 +155,4 @@ if nameGiven.lowercased() == enteredName.lowercased(){
 else{
     print("Entered name does not matches with the given name")
 }
-
+// Entered name and given name matches with each other
