@@ -26,9 +26,16 @@ print(dev[dev.index(before: dev.endIndex)])
 
 print(author[author.index(after: author.startIndex)])
 
-print(author[author.index(author.startIndex,offsetBy: 5)])
+print(author[author.index(author.startIndex,offsetBy: 6)])
 
 print(author[author.index(author.endIndex,offsetBy: -5)])
 
 print(fact[fact.index(fact.endIndex,offsetBy: -4)])
 
+var name = "Wyatt Morgan"
+
+// positive go from left to right, starts with 0
+print(name[name.index(name.startIndex, offsetBy: 6)])
+
+// negative go from right to left, starts with 1
+print(name[name.index(name.endIndex, offsetBy: -6)])
