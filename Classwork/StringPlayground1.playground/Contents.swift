@@ -6,7 +6,8 @@ var author = "Swift was created by Chris Lattner"
 
 print(fact.count)
 
-print(fact += ", it has a better memory management")
+fact += ", it has a better memory management"
+print(fact)
 
 print(dev.append(" by Apple"))
 
@@ -14,6 +15,7 @@ print(author.lowercased())
 
 print(author.uppercased())
 
+// in the swift language, elements in String accessed by the type Index
 print(author[author.startIndex])
 
 print(author[author.index(before: author.endIndex)])
