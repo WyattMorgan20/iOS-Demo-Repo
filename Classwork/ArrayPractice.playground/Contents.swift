@@ -24,5 +24,3 @@ print(num)
 var letters: [String] = ["B", "D", "C", "A"]
 letters.sort()
 print(letters)
-
-
