@@ -21,6 +21,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nextBtnOL: UIButton!
     
+    let courses = [["img01", "44555", "Network Security", "Fall 2025"],
+                   ["img02", "44643", "Mobile Computing", "Summer 2025"],
+                   ["img03", "44222", "Streaming Data", "Spring 2026"]]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
