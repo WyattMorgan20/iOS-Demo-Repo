@@ -28,6 +28,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // Update course details (img, crsNum, crsTitle, semOffered) with the first element in the array
+        imageViewOL.image = UIImage(named: courses[0][0])
+        crsNumOL.text = courses[0][1]
+        crsTitleOL.text = courses[0][2]
+        semOfferedOL.text = courses[0][3]
+        
+        // Previous button is disabled
+        prevBttnOL.isEnabled = false
+        
+        // Next button is enabled
+        nextBtnOL.isEnabled = true
     }
 
     @IBAction func prevBtnClicked(_ sender: UIButton) {
@@ -35,6 +47,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextBtnClicked(_ sender: UIButton) {
+        // on click moves to next view
         
     }
     
