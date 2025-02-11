@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nextBtnOL: UIButton!
     
+    var imageIndex = 0
+    
     let courses = [["img01", "44555", "Network Security", "Fall 2025"],
                    ["img02", "44643", "Mobile Computing", "Summer 2025"],
                    ["img03", "44222", "Streaming Data", "Spring 2026"]]
@@ -43,12 +45,43 @@ class ViewController: UIViewController {
     }
 
     @IBAction func prevBtnClicked(_ sender: UIButton) {
+        // decrement the image
+        imageIndex -= 1
         
+        // update the course details (img, crsNum, crsTitle, semOffered)
+        imageViewOL.image = UIImage(named: courses[imageIndex][0])
+        crsNumOL.text = courses[imageIndex][1]
+        crsTitleOL.text = courses[imageIndex][2]
+        semOfferedOL.text = courses[imageIndex][3]
+        
+        // next button should be enabled
+        nextBtnOL.isEnabled = true
+        
+        // check if the element is at the beginning of the array
+        // if so, prev button should be disabled
+        if(imageIndex == 0){
+            prevBttnOL.isEnabled = false
+        }
     }
     
     @IBAction func nextBtnClicked(_ sender: UIButton) {
-        // on click moves to next view
+        // increment the image
+        imageIndex += 1
         
+        // update the course details (img, crsNum, crsTitle, semOffered)
+        imageViewOL.image = UIImage(named: courses[imageIndex][0])
+        crsNumOL.text = courses[imageIndex][1]
+        crsTitleOL.text = courses[imageIndex][2]
+        semOfferedOL.text = courses[imageIndex][3]
+        
+        // previous button should be enabled
+        prevBttnOL.isEnabled = true
+        
+        // check if the element is at the end of the array
+        // if so, next button should be disabled
+        if(imageIndex == courses.count - 1){
+            nextBtnOL.isEnabled = false
+        }
     }
     
 }
