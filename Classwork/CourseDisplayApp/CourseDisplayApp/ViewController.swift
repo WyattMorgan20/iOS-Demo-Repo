@@ -32,10 +32,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Update course details (img, crsNum, crsTitle, semOffered) with the first element in the array
-        imageViewOL.image = UIImage(named: courses[0][0])
-        crsNumOL.text = courses[0][1]
-        crsTitleOL.text = courses[0][2]
-        semOfferedOL.text = courses[0][3]
+        updateCourseDetails(imageIndex)
         
         // Previous button is disabled
         prevBttnOL.isEnabled = false
@@ -49,10 +46,7 @@ class ViewController: UIViewController {
         imageIndex -= 1
         
         // update the course details (img, crsNum, crsTitle, semOffered)
-        imageViewOL.image = UIImage(named: courses[imageIndex][0])
-        crsNumOL.text = courses[imageIndex][1]
-        crsTitleOL.text = courses[imageIndex][2]
-        semOfferedOL.text = courses[imageIndex][3]
+        updateCourseDetails(imageIndex)
         
         // next button should be enabled
         nextBtnOL.isEnabled = true
@@ -69,10 +63,7 @@ class ViewController: UIViewController {
         imageIndex += 1
         
         // update the course details (img, crsNum, crsTitle, semOffered)
-        imageViewOL.image = UIImage(named: courses[imageIndex][0])
-        crsNumOL.text = courses[imageIndex][1]
-        crsTitleOL.text = courses[imageIndex][2]
-        semOfferedOL.text = courses[imageIndex][3]
+        updateCourseDetails(imageIndex)
         
         // previous button should be enabled
         prevBttnOL.isEnabled = true
@@ -82,6 +73,14 @@ class ViewController: UIViewController {
         if(imageIndex == courses.count - 1){
             nextBtnOL.isEnabled = false
         }
+    }
+    
+    func updateCourseDetails(_ imageNumber: Int){
+        // update the course details (img, crsNum, crsTitle, semOffered)
+        imageViewOL.image = UIImage(named: courses[imageIndex][0])
+        crsNumOL.text = courses[imageIndex][1]
+        crsTitleOL.text = courses[imageIndex][2]
+        semOfferedOL.text = courses[imageIndex][3]
     }
     
 }
