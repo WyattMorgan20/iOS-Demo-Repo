@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         ["Northwest", "School"]
     ]
     
-    var count = 0;
+    var count = 0
     var word = ""
     var lettersGuessed = ""
     
@@ -86,11 +86,54 @@ class ViewController: UIViewController {
     }
     
     @IBAction func playAgainBTNClick(_ sender: UIButton) {
+        // Reset the button to disable initially
+        playAgainOL.isHidden = true
         
+        // Clear the label
+        lettersGuessed = ""
+        count += 1
+        
+        // If count reaches the end of the array
+        // (all the words are guessed sucessfully),
+        // then print Congratulations in the status label
+        if count == words.count{
+            messageOL.text = "Congratulations! You are done with the game!"
+            
+            // Clearing the labels
+            displayOL.text = ""
+            hintOL.text = ""
+        }
+        else{
+            // Fetch the next word from the array
+            word = words[count][0]
+            
+            // Fetch the hint related to the word
+            hintOL.text = words[count][1]
+            
+            // Enabling the check button
+            checkOL.isEnabled = true
+            
+            displayOL.text = ""
+            updateUnderscores()
+        }
     }
     
     @IBAction func letterEntered(_ sender: UITextField) {
+        // Read the data from the text field
+        var textEntered = inputOL.text!
         
+        // Consider only the last character by calling
+        // textEntered.last and trimming the white spaces
+        textEntered = String(textEntered.last ?? " ").trimmingCharacters(in: .whitespaces)
+        inputOL.text = textEntered
+        
+        // Check whether the entered text is empty or not to enable check button
+        if textEntered.isEmpty{
+            checkOL.isEnabled = false
+        }
+        else{
+            checkOL.isEnabled = true
+        }
     }
     
     func updateUnderscores(){
