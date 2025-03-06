@@ -30,6 +30,9 @@ class ViewController: UIViewController {
         // Check whether it is cold or hot
         // temperature > 60 (hot) otherwise, cold
         if temp! > 60 {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.imageViewOL.alpha = 0.0 // Fade out
+            })
             imageViewOL.image = UIImage(named: "Hot")
             outputOL.text = "It is hot outside🥵🔥"
         }
