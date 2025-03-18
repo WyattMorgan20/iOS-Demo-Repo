@@ -32,7 +32,6 @@ class ViewController: UIViewController {
         imageOutlet.frame.origin.x = view.frame.maxX
         
         //Similarly, move other components as well outside of the screen
-            
         happyOutlet.frame.origin.x = view.frame.width
             
         sadOutlet.frame.origin.x = view.frame.width
@@ -66,10 +65,9 @@ class ViewController: UIViewController {
             
         height = height + 40
             
-        var x  =  imageOutlet.frame.origin.x-20
+        var x  =  imageOutlet.frame.origin.x - 20
             
-            
-        var y = imageOutlet.frame.origin.y-20
+        var y = imageOutlet.frame.origin.y - 20
             
         var largeFrame = CGRect(x: x, y: y, width: width, height: height)
             
@@ -107,7 +105,6 @@ class ViewController: UIViewController {
         })
             
         //Assign the new image with animation and make it transparent. (alpha = 1)
-            
         UIView.animate(withDuration: 1, delay:0.5, animations: {
             self.imageOutlet.alpha = 1
             self.imageOutlet.image = UIImage(named: imageName)
