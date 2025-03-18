@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hello" translatesAutoresizingMaskIntoConstraints="NO" id="vwi-h8-V7E">
+                                <rect key="frame" x="76.666666666666686" y="91" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ZSn-Zi-3ot"/>
+                                    <constraint firstAttribute="height" constant="128" id="ci8-hB-RHX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ye8-0m-GNX">
+                                <rect key="frame" x="136.66666666666666" y="278" width="119.99999999999997" height="58"/>
+                                <color key="backgroundColor" red="0.57555896829999997" green="0.33851294110000002" blue="0.84258943799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="5od-oT-Xse"/>
+                                    <constraint firstAttribute="width" constant="120" id="bAA-Cb-ZlA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Happy">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xf0-pS-k4D">
+                                <rect key="frame" x="136.66666666666666" y="382" width="119.99999999999997" height="58"/>
+                                <color key="backgroundColor" red="0.57555896829999997" green="0.33851294110000002" blue="0.84258943799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="MKk-Pq-q0b"/>
+                                    <constraint firstAttribute="width" constant="120" id="jsT-1c-StE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sad">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eka-b6-l4j">
+                                <rect key="frame" x="136.66666666666666" y="485" width="119.99999999999997" height="58"/>
+                                <color key="backgroundColor" red="0.57555896829999997" green="0.33851294110000002" blue="0.84258943799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="F8y-wh-9zf"/>
+                                    <constraint firstAttribute="height" constant="58" id="y17-eB-DMf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Angry">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmG-ol-3nr">
+                                <rect key="frame" x="136.66666666666666" y="588" width="119.99999999999997" height="58"/>
+                                <color key="backgroundColor" red="0.57555896829999997" green="0.33851294110000002" blue="0.84258943799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="nhh-Vn-aci"/>
+                                    <constraint firstAttribute="width" constant="120" id="oIx-IR-QwC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Shake Me!">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAx-1S-Wyg">
+                                <rect key="frame" x="136.66666666666666" y="691" width="119.99999999999997" height="58"/>
+                                <color key="backgroundColor" red="0.57555896829999997" green="0.33851294110000002" blue="0.84258943799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="IKq-w6-hvm"/>
+                                    <constraint firstAttribute="width" constant="120" id="zSU-qY-Mvg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="bAx-1S-Wyg" firstAttribute="top" secondItem="xmG-ol-3nr" secondAttribute="bottom" constant="45" id="72M-pu-1PG"/>
+                            <constraint firstItem="ye8-0m-GNX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Ml-KC-7EH"/>
+                            <constraint firstItem="Eka-b6-l4j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JFK-1d-nVc"/>
+                            <constraint firstItem="Xf0-pS-k4D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lqq-IT-kdT"/>
+                            <constraint firstItem="bAx-1S-Wyg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q8M-yJ-HZG"/>
+                            <constraint firstItem="xmG-ol-3nr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XnC-TZ-Y3u"/>
+                            <constraint firstItem="vwi-h8-V7E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gyL-S7-P6M"/>
+                            <constraint firstItem="vwi-h8-V7E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="hOS-Om-a81"/>
+                            <constraint firstItem="ye8-0m-GNX" firstAttribute="top" secondItem="vwi-h8-V7E" secondAttribute="bottom" constant="59" id="hp1-ke-QzK"/>
+                            <constraint firstItem="xmG-ol-3nr" firstAttribute="top" secondItem="Eka-b6-l4j" secondAttribute="bottom" constant="45" id="kfx-E5-Lfk"/>
+                            <constraint firstItem="Xf0-pS-k4D" firstAttribute="top" secondItem="ye8-0m-GNX" secondAttribute="bottom" constant="46" id="l7o-Tn-Qnc"/>
+                            <constraint firstItem="Eka-b6-l4j" firstAttribute="top" secondItem="Xf0-pS-k4D" secondAttribute="bottom" constant="45" id="xfK-W5-jo4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="angryOutlet" destination="Eka-b6-l4j" id="wEg-Og-n2a"/>
+                        <outlet property="happyOutlet" destination="ye8-0m-GNX" id="SWf-f8-ryJ"/>
+                        <outlet property="imageOutlet" destination="vwi-h8-V7E" id="ghs-qg-r86"/>
+                        <outlet property="sadOutlet" destination="Xf0-pS-k4D" id="bZJ-qU-8u7"/>
+                        <outlet property="shakeMeOutlet" destination="xmG-ol-3nr" id="kA1-OH-xln"/>
+                        <outlet property="showMeOutlet" destination="bAx-1S-Wyg" id="vYz-us-CtG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hello" width="210" height="158"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
