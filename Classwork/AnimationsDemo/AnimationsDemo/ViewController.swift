@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
+    
     @IBOutlet weak var imageOutlet: UIImageView!
     
     @IBOutlet weak var happyOutlet: UIButton!
@@ -45,7 +45,6 @@ class ViewController: UIViewController {
     @IBAction func happyButtonClicked(_ sender: UIButton) {
         updateAndAnimate("happy")
     }
-        
         
     @IBAction func sadButtonClicked(_ sender: Any) {
         updateAndAnimate("sad")
@@ -110,7 +109,6 @@ class ViewController: UIViewController {
             self.imageOutlet.image = UIImage(named: imageName)
         })
         
-
     }
 
 
