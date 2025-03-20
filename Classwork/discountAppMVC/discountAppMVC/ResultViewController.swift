@@ -8,11 +8,25 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    
+    @IBOutlet weak var EnteredAmountOL: UILabel!
+    
+    @IBOutlet weak var EnteredDiscountOL: UILabel!
+    
+    @IBOutlet weak var PriceAfterDiscountOL: UILabel!
+    
+    var amount = ""
+    var discount = ""
+    var priceAfterDiscount = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        EnteredAmountOL.text = "Entered Amount: \(amount)"
+        EnteredDiscountOL.text = "Entered Discount: \(discount)"
+        PriceAfterDiscountOL.text = "Price After Discount: \(priceAfterDiscount)"
     }
     
 
