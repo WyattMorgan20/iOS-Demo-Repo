@@ -32,9 +32,9 @@ class ResultViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        EnteredHfeetOL.text = EnteredHfeetOL.text! + String(enteredhfeet)
-        EnteredHinchesOL.text = EnteredHinchesOL.text! + String(enteredhinches)
-        EnteredWlbsOL.text = EnteredWlbsOL.text! + String(enteredwlbs)
+        EnteredHfeetOL.text = EnteredHfeetOL.text! + " " + String(enteredhfeet)
+        EnteredHinchesOL.text = EnteredHinchesOL.text! + " " + String(enteredhinches)
+        EnteredWlbsOL.text = EnteredWlbsOL.text! + " " + String(enteredwlbs)
         ResultLabelOL.text = """
             BMI value: \(bmiResult)
             Category: \(categoryMessage)
