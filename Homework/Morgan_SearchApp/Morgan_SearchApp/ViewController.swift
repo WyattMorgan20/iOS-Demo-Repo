@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     var topics_description = ["Famous landmarks around the world", "Powerful enemies in the Destiny 2 Universe", "Different gaming consoles", "Different game developers", "Shows based off video games"]
     
     var iteratorNum = 0
+    var topicIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,30 +48,31 @@ class ViewController: UIViewController {
     @IBAction func searchButtonAction(_ sender: UIButton) {
         AudioServicesPlaySystemSound(1113)
         var textInput = searchTextField.text!
+        var topic = 0
         
         if(famousLandmarks_keywords.contains(textInput)){
-            var topic = 1
-            resultImage.image = UIImage(named: topicsArr[0][iteratorNum])
+            topic = 1
+            resultImage.image = UIImage(named: topicsArr[topicIndex][iteratorNum])
             topicInfoText.text! = topics_description[0]
         }
         else if(destiny2Enemies_keywords.contains(textInput)){
-            var topic = 2
-            resultImage.image = UIImage(named: topicsArr[1][iteratorNum])
+            topic = 2
+            resultImage.image = UIImage(named: topicsArr[topicIndex][iteratorNum])
             topicInfoText.text! = topics_description[1]
         }
         else if(gameConsole_keywords.contains(textInput)){
-            var topic = 3
-            resultImage.image = UIImage(named: topicsArr[2][iteratorNum])
+            topic = 3
+            resultImage.image = UIImage(named: topicsArr[topicIndex][iteratorNum])
             topicInfoText.text! = topics_description[2]
         }
         else if(gameDev_keywords.contains(textInput)){
-            var topic = 4
-            resultImage.image = UIImage(named: topicsArr[3][iteratorNum])
+            topic = 4
+            resultImage.image = UIImage(named: topicsArr[topicIndex][iteratorNum])
             topicInfoText.text! = topics_description[3]
         }
         else if(gameShow_keywords.contains(textInput)){
-            var topic = 5
-            resultImage.image = UIImage(named: topicsArr[4][iteratorNum])
+            topic = 5
+            resultImage.image = UIImage(named: topicsArr[topicIndex][iteratorNum])
             topicInfoText.text! = topics_description[4]
         }
         
@@ -78,8 +80,9 @@ class ViewController: UIViewController {
     
     @IBAction func showNextImageBtn(_ sender: UIButton) {
         AudioServicesPlaySystemSound(1105)
-        if(iteratorNum <= 4){
+        if(iteratorNum <= 2){
             iteratorNum += 1
+            resultImage.image = UIImage(named: topicsArr[topicIndex][iteratorNum])
         }
         
         if(iteratorNum == 4){
@@ -92,8 +95,9 @@ class ViewController: UIViewController {
     
     @IBAction func showPrevImageBtn(_ sender: UIButton) {
         AudioServicesPlaySystemSound(1105)
-        if(iteratorNum >= 0){
+        if(iteratorNum >= 2){
             iteratorNum -= 1
+            resultImage.image = UIImage(named: topicsArr[topicIndex][iteratorNum])
         }
         
         if(iteratorNum == 0){
