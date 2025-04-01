@@ -19,10 +19,30 @@ class CalculatedViewController: UIViewController {
     
     @IBOutlet weak var imageOT: UIImageView!
     
+    var enteredActivity = ""
+    var enteredDuration = 0.0
+    var enteredCPM = 0.0
+    var resultTotalCaloriesBurned = 0.0
+    var resultImageName = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        activityResultOT.text = activityResultOT.text! + String(enteredActivity)
+        
+        durationResultOT.text = durationResultOT.text! + String(enteredDuration)
+        
+        cpmResultOT.text = cpmResultOT.text! + String(enteredCPM)
+        
+        totalCaloriesBurnedOT.text = totalCaloriesBurnedOT.text! + String(resultTotalCaloriesBurned)
+        
+        imageOT.image = UIImage(named: resultImageName)
+        
+        imageOT.alpha = 0.0
+        UIView.animate(withDuration: 1.5){
+            self.imageOT.alpha = 1.0
+        }
     }
     
 
