@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var topicInfoText: UILabel!
     
+    @IBOutlet weak var nextBTNEnabler: UIButton!
+    
+    @IBOutlet weak var prevBTNEnabler: UIButton!
+    
     var topicsArr = [["mountEverest", "eiffelTower", "pearlHarbor"], ["theWitness", "oryx", "eramis"], ["xbox", "ps5", "switch2"], ["bungie", "treyarch", "cdProjektRed"], ["arcane", "fallout", "edgerunners"]]
     
     // Topics:
@@ -34,7 +38,7 @@ class ViewController: UIViewController {
     // Game TV Shows: Arcane, Fallout, Edgerunners
     var gameShow_keywords = ["arcane", "fallout", "edgerunners"]
     
-    var topics_description = ["Famous landmarks around the world", "Powerful enemies in the Destiny 2 Universe", "Different gaming consoles", "Different game developers", "Shows based off video games"]
+    var topics_description = ["Famous landmarks around the world. Images include pictures of Mount Everest, the Eiffel Tower, and The Pearl Harbor Memorial", "Powerful enemies in the Destiny 2 Universe. Images include pictures of The Witness, Oryx: The Taken King, and Eramis Kell of House Salvation", "Different gaming consoles. Images include pictures of the Xbox Series X, the Ps5, and the Nintendo Switch 2", "Different game developers. Images include pictures of Bungie, Treyarch, and CD Projekt Red", "Shows based off video games. Images include pictures of Arcane, The Fallout TV Show, and Cyberpunk: Edgerunners"]
     
     var iteratorNum = 0
     var topic = 1
@@ -42,6 +46,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        nextBTNEnabler.isEnabled = iteratorNum < 2
+        prevBTNEnabler.isEnabled = iteratorNum > 0
+        
+        resultImage.image = UIImage(named: "welcome")
+        
+        topicInfoText.text! = "Hello, Wyatt!!"
         
     }
 
@@ -74,22 +84,36 @@ class ViewController: UIViewController {
             resultImage.image = UIImage(named: topicsArr[topic - 1][iteratorNum])
             topicInfoText.text! = topics_description[topic - 1]
         }
+        else{
+            resultImage.image = UIImage(named: "incorrectInput")
+            topicInfoText.text! = "No results found for \(textInput)"
+            nextBTNEnabler.isEnabled = false
+            prevBTNEnabler.isEnabled = false
+        }
         
         iteratorNum = 0
         
     }
     
     @IBAction func showNextImageBtn(_ sender: UIButton) {
+        sender.isEnabled = iteratorNum < topicsArr[topic - 1].count - 1
+        
         AudioServicesPlaySystemSound(1105)
-        if(iteratorNum < 2){
+        if(iteratorNum < topicsArr[topic - 1].count - 1){
             iteratorNum += 1
             resultImage.image = UIImage(named: topicsArr[topic - 1][iteratorNum])
         }
         
-        sender.isEnabled = iteratorNum < 2
+        sender.isEnabled = iteratorNum < topicsArr[topic - 1].count - 1
+        
+        if iteratorNum > 0 {
+            prevBTNEnabler.isEnabled = true
+        }
     }
     
     @IBAction func showPrevImageBtn(_ sender: UIButton) {
+        sender.isEnabled = iteratorNum > 0
+        
         AudioServicesPlaySystemSound(1105)
         if(iteratorNum > 0){
             iteratorNum -= 1
@@ -97,6 +121,10 @@ class ViewController: UIViewController {
         }
         
         sender.isEnabled = iteratorNum > 0
+        
+        if iteratorNum < 2 {
+            nextBTNEnabler.isEnabled = true
+        }
     }
     
     @IBAction func ResetBtn(_ sender: UIButton) {
@@ -106,11 +134,11 @@ class ViewController: UIViewController {
         resultImage.image = nil
         iteratorNum = 0
         
-        for subview in view.subviews {
-            if let button = subview as? UIButton {
-                button.isEnabled = true
-            }
-        }
+        nextBTNEnabler.isEnabled = true
+        prevBTNEnabler.isEnabled = false
+        
+        resultImage.image = UIImage(named: "welcome")
+        topicInfoText.text! = "Hello, Wyatt!!"
     }
 }
 

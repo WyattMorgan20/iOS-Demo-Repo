@@ -101,6 +101,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nextBTNEnabler" destination="vzs-uc-9aC" id="rps-Ca-tad"/>
+                        <outlet property="prevBTNEnabler" destination="dzh-yE-HCh" id="Xhy-lR-RcG"/>
                         <outlet property="resultImage" destination="uIo-rL-jeD" id="WMZ-6r-QgR"/>
                         <outlet property="searchTextField" destination="9ae-rc-ldI" id="UaL-Ye-vus"/>
                         <outlet property="topicInfoText" destination="PML-Ne-ut3" id="XpI-1m-hFm"/>
