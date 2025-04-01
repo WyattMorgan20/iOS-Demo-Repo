@@ -43,12 +43,6 @@
                                     <constraint firstAttribute="height" constant="200" id="MRT-HL-AlW"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uIo-rL-jeD">
-                                <rect key="frame" x="20" y="143.33333333333334" width="353" height="200.00000000000003"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="DrQ-pp-DK6"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MP1-op-KON">
                                 <rect key="frame" x="31" y="373.33333333333331" width="331" height="34.333333333333314"/>
                                 <subviews>
@@ -93,6 +87,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIo-rL-jeD">
+                                <rect key="frame" x="20" y="146" width="353" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="DrQ-pp-DK6"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="underPageBackgroundColor"/>
@@ -125,6 +125,7 @@
                     <connections>
                         <outlet property="resultImage" destination="uIo-rL-jeD" id="WMZ-6r-QgR"/>
                         <outlet property="searchTextField" destination="9ae-rc-ldI" id="UaL-Ye-vus"/>
+                        <outlet property="topicInfoText" destination="PML-Ne-ut3" id="XpI-1m-hFm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
