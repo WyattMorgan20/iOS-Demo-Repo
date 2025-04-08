@@ -17,6 +17,8 @@ class ProductsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        productDisplayLabelOL.text = "The product name is: \((product?.productName)!) and its description is: \((product?.productDescription)!)"
     }
     
 
