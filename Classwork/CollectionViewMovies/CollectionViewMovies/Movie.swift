@@ -30,4 +30,5 @@ let movies : [Movie] = [
     Movie(title:"There Will be Blood",image:UIImage(named: "there will be blood")!,releasedYear: "2007",movieRating: "8.2",boxOffice: "76.2M"),
     Movie(title:"Baahubali 2",image:UIImage(named: "bahubhali")!,releasedYear: "2017",movieRating: "7.9",boxOffice: "265.42M"),
     Movie(title:"Wall-E",image:UIImage(named: "walle")!,releasedYear: "2008",movieRating: "8.4",boxOffice: "521.3M"),
+    Movie(title:"Tron: Legacy",image:UIImage(named: "tron")!,releasedYear: "2010",movieRating: "8.4",boxOffice: "521.3M"),
 ]
