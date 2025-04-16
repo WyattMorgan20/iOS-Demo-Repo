@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zVH-XY-cBJ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Booking View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BookingViewController" customModule="Morgan_TravelBooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Primary Traveller's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5E-ce-sRt">
+                                <rect key="frame" x="20" y="202" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter No. of Travellers" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEy-cR-TjK">
+                                <rect key="frame" x="20" y="256" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Class: Luxury / Economy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yIb-Pf-ret">
+                                <rect key="frame" x="20" y="310" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gN8-lH-fcE">
+                                <rect key="frame" x="60" y="384" width="273" height="35"/>
+                                <color key="backgroundColor" red="0.67236469870000004" green="0.24814978230000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Book Now"/>
+                                <connections>
+                                    <action selector="bookNowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="41F-SQ-IfQ"/>
+                                    <segue destination="BzD-sa-Ge3" kind="show" identifier="resultSegue" id="vf0-S8-Cu0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUS TRAVEL BOOKING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rq9-FL-g39">
+                                <rect key="frame" x="20" y="50" width="353" height="21"/>
+                                <color key="backgroundColor" red="0.67236469870000004" green="0.24814978230000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="underPageBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eEy-cR-TjK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2LY-Ho-PNE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eEy-cR-TjK" secondAttribute="trailing" constant="20" id="3kh-AC-Lcw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C5E-ce-sRt" secondAttribute="trailing" constant="20" id="4rT-q5-qnS"/>
+                            <constraint firstItem="gN8-lH-fcE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="67Q-xV-5ra"/>
+                            <constraint firstItem="rq9-FL-g39" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="I99-hD-Qfz"/>
+                            <constraint firstItem="C5E-ce-sRt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="OVE-O3-AfT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gN8-lH-fcE" secondAttribute="trailing" constant="60" id="TGq-6k-USE"/>
+                            <constraint firstItem="gN8-lH-fcE" firstAttribute="top" secondItem="yIb-Pf-ret" secondAttribute="bottom" constant="40" id="Vst-b3-qwy"/>
+                            <constraint firstItem="yIb-Pf-ret" firstAttribute="top" secondItem="eEy-cR-TjK" secondAttribute="bottom" constant="20" id="g4D-fC-nF6"/>
+                            <constraint firstItem="yIb-Pf-ret" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q9f-FJ-lmG"/>
+                            <constraint firstItem="rq9-FL-g39" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="quc-46-wvi"/>
+                            <constraint firstItem="eEy-cR-TjK" firstAttribute="top" secondItem="C5E-ce-sRt" secondAttribute="bottom" constant="20" id="ryc-L5-S0f"/>
+                            <constraint firstAttribute="trailing" secondItem="rq9-FL-g39" secondAttribute="trailing" constant="20" id="vbQ-NP-HZg"/>
+                            <constraint firstItem="C5E-ce-sRt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="whd-4k-jRh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yIb-Pf-ret" secondAttribute="trailing" constant="20" id="y6B-FM-8UP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Abu-s7-S3X"/>
+                    <connections>
+                        <outlet property="cabinTypeOL" destination="yIb-Pf-ret" id="1ET-W0-xWh"/>
+                        <outlet property="noOfTravellersOL" destination="eEy-cR-TjK" id="Dr7-Gs-FcS"/>
+                        <outlet property="travellerNameOL" destination="C5E-ce-sRt" id="J29-ee-81V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
+        </scene>
+        <!--Morgan Result View Controller-->
+        <scene sceneID="mgL-6T-F0H">
+            <objects>
+                <viewController id="BzD-sa-Ge3" customClass="MorganResultViewController" customModule="Morgan_TravelBooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pd9-nI-LGs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DCp-eq-UqT">
+                                <rect key="frame" x="30" y="202" width="333" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="qlY-Xv-JHz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traveller Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERo-wc-tml">
+                                <rect key="frame" x="40" y="422" width="313" height="20.333333333333314"/>
+                                <color key="backgroundColor" red="0.67236469870000004" green="0.24814978230000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Guests" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NS-6o-0hh">
+                                <rect key="frame" x="40" y="462.33333333333331" width="313" height="20.333333333333314"/>
+                                <color key="backgroundColor" red="0.67236469870000004" green="0.24814978230000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Type" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZn-yl-cF8">
+                                <rect key="frame" x="40" y="502.66666666666669" width="313" height="20.333333333333314"/>
+                                <color key="backgroundColor" red="0.67236469870000004" green="0.24814978230000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Cost of trip" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDT-sc-a90">
+                                <rect key="frame" x="40" y="543" width="313" height="20.333333333333371"/>
+                                <color key="backgroundColor" red="0.67236469870000004" green="0.24814978230000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdA-bq-CLX">
+                                <rect key="frame" x="40" y="593.33333333333337" width="313" height="21"/>
+                                <color key="backgroundColor" red="0.67236469870000004" green="0.24814978230000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a2Q-cQ-uLw"/>
+                        <color key="backgroundColor" systemColor="underPageBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a2Q-cQ-uLw" firstAttribute="trailing" secondItem="iZn-yl-cF8" secondAttribute="trailing" constant="40" id="0ZR-MW-mSP"/>
+                            <constraint firstItem="BDT-sc-a90" firstAttribute="top" secondItem="iZn-yl-cF8" secondAttribute="bottom" constant="20" id="36t-5z-ql5"/>
+                            <constraint firstItem="a2Q-cQ-uLw" firstAttribute="trailing" secondItem="TdA-bq-CLX" secondAttribute="trailing" constant="40" id="PBL-X0-hvj"/>
+                            <constraint firstItem="DCp-eq-UqT" firstAttribute="leading" secondItem="a2Q-cQ-uLw" secondAttribute="leading" constant="30" id="Rzc-3o-Jji"/>
+                            <constraint firstItem="TdA-bq-CLX" firstAttribute="top" secondItem="BDT-sc-a90" secondAttribute="bottom" constant="30" id="T7d-UQ-VtW"/>
+                            <constraint firstItem="DCp-eq-UqT" firstAttribute="top" secondItem="a2Q-cQ-uLw" secondAttribute="top" constant="40" id="UGV-XL-u4q"/>
+                            <constraint firstItem="BDT-sc-a90" firstAttribute="leading" secondItem="a2Q-cQ-uLw" secondAttribute="leading" constant="40" id="ZJE-sl-8GO"/>
+                            <constraint firstItem="a2Q-cQ-uLw" firstAttribute="trailing" secondItem="ERo-wc-tml" secondAttribute="trailing" constant="40" id="ZjQ-36-kbY"/>
+                            <constraint firstItem="TdA-bq-CLX" firstAttribute="leading" secondItem="a2Q-cQ-uLw" secondAttribute="leading" constant="40" id="bm9-bS-BIH"/>
+                            <constraint firstItem="iZn-yl-cF8" firstAttribute="leading" secondItem="a2Q-cQ-uLw" secondAttribute="leading" constant="40" id="bxv-g8-e04"/>
+                            <constraint firstItem="4NS-6o-0hh" firstAttribute="leading" secondItem="a2Q-cQ-uLw" secondAttribute="leading" constant="40" id="c8B-mv-anz"/>
+                            <constraint firstItem="a2Q-cQ-uLw" firstAttribute="trailing" secondItem="BDT-sc-a90" secondAttribute="trailing" constant="40" id="eCa-cR-QMr"/>
+                            <constraint firstItem="a2Q-cQ-uLw" firstAttribute="trailing" secondItem="DCp-eq-UqT" secondAttribute="trailing" constant="30" id="iRE-bA-fhH"/>
+                            <constraint firstItem="4NS-6o-0hh" firstAttribute="top" secondItem="ERo-wc-tml" secondAttribute="bottom" constant="20" id="nSB-nS-ewy"/>
+                            <constraint firstItem="ERo-wc-tml" firstAttribute="leading" secondItem="a2Q-cQ-uLw" secondAttribute="leading" constant="40" id="pg1-mk-QPE"/>
+                            <constraint firstItem="iZn-yl-cF8" firstAttribute="top" secondItem="4NS-6o-0hh" secondAttribute="bottom" constant="20" id="q8S-dh-sn1"/>
+                            <constraint firstItem="a2Q-cQ-uLw" firstAttribute="trailing" secondItem="4NS-6o-0hh" secondAttribute="trailing" constant="40" id="toO-k2-7hs"/>
+                            <constraint firstItem="ERo-wc-tml" firstAttribute="top" secondItem="DCp-eq-UqT" secondAttribute="bottom" constant="20" id="uOC-Kv-vcC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mo9-tq-1qJ"/>
+                    <connections>
+                        <outlet property="cabinTypeOL" destination="iZn-yl-cF8" id="ixh-dM-pXx"/>
+                        <outlet property="imageOL" destination="DCp-eq-UqT" id="3nU-ZT-WFu"/>
+                        <outlet property="noOfTravellersOL" destination="4NS-6o-0hh" id="C79-kK-vt4"/>
+                        <outlet property="resultOL" destination="TdA-bq-CLX" id="NQS-bN-KIV"/>
+                        <outlet property="totalCostOL" destination="BDT-sc-a90" id="xor-yu-SWn"/>
+                        <outlet property="travellerNameOL" destination="ERo-wc-tml" id="VtX-AI-hDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBG-Cg-Geh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922.9007633587785" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xPz-Ex-DF3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zVH-XY-cBJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M6Z-EO-i9m">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2Nu-gJ-X5d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFr-Y8-Q9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="underPageBackgroundColor">
+            <color red="0.70980392156862748" green="0.71764705882352942" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
