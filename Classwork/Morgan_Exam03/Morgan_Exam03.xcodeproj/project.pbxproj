@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		8C28A38D2DB7F62000B0E431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C28A36E2DB7F61F00B0E431 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C28A3752DB7F61F00B0E431;
+			remoteInfo = Morgan_Exam03;
+		};
+		8C28A3972DB7F62000B0E431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C28A36E2DB7F61F00B0E431 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C28A3752DB7F61F00B0E431;
+			remoteInfo = Morgan_Exam03;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C28A3762DB7F61F00B0E431 /* Morgan_Exam03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morgan_Exam03.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C28A38C2DB7F62000B0E431 /* Morgan_Exam03Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Morgan_Exam03Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C28A3962DB7F62000B0E431 /* Morgan_Exam03UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Morgan_Exam03UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8C28A39E2DB7F62000B0E431 /* Exceptions for "Morgan_Exam03" folder in "Morgan_Exam03" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8C28A3752DB7F61F00B0E431 /* Morgan_Exam03 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8C28A3782DB7F61F00B0E431 /* Morgan_Exam03 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8C28A39E2DB7F62000B0E431 /* Exceptions for "Morgan_Exam03" folder in "Morgan_Exam03" target */,
+			);
+			path = Morgan_Exam03;
+			sourceTree = "<group>";
+		};
+		8C28A38F2DB7F62000B0E431 /* Morgan_Exam03Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Morgan_Exam03Tests;
+			sourceTree = "<group>";
+		};
+		8C28A3992DB7F62000B0E431 /* Morgan_Exam03UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Morgan_Exam03UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C28A3732DB7F61F00B0E431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C28A3892DB7F62000B0E431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C28A3932DB7F62000B0E431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C28A36D2DB7F61F00B0E431 = {
+			isa = PBXGroup;
+			children = (
+				8C28A3782DB7F61F00B0E431 /* Morgan_Exam03 */,
+				8C28A38F2DB7F62000B0E431 /* Morgan_Exam03Tests */,
+				8C28A3992DB7F62000B0E431 /* Morgan_Exam03UITests */,
+				8C28A3772DB7F61F00B0E431 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C28A3772DB7F61F00B0E431 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C28A3762DB7F61F00B0E431 /* Morgan_Exam03.app */,
+				8C28A38C2DB7F62000B0E431 /* Morgan_Exam03Tests.xctest */,
+				8C28A3962DB7F62000B0E431 /* Morgan_Exam03UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C28A3752DB7F61F00B0E431 /* Morgan_Exam03 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C28A39F2DB7F62000B0E431 /* Build configuration list for PBXNativeTarget "Morgan_Exam03" */;
+			buildPhases = (
+				8C28A3722DB7F61F00B0E431 /* Sources */,
+				8C28A3732DB7F61F00B0E431 /* Frameworks */,
+				8C28A3742DB7F61F00B0E431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8C28A3782DB7F61F00B0E431 /* Morgan_Exam03 */,
+			);
+			name = Morgan_Exam03;
+			packageProductDependencies = (
+			);
+			productName = Morgan_Exam03;
+			productReference = 8C28A3762DB7F61F00B0E431 /* Morgan_Exam03.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C28A38B2DB7F62000B0E431 /* Morgan_Exam03Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C28A3A42DB7F62000B0E431 /* Build configuration list for PBXNativeTarget "Morgan_Exam03Tests" */;
+			buildPhases = (
+				8C28A3882DB7F62000B0E431 /* Sources */,
+				8C28A3892DB7F62000B0E431 /* Frameworks */,
+				8C28A38A2DB7F62000B0E431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C28A38E2DB7F62000B0E431 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8C28A38F2DB7F62000B0E431 /* Morgan_Exam03Tests */,
+			);
+			name = Morgan_Exam03Tests;
+			packageProductDependencies = (
+			);
+			productName = Morgan_Exam03Tests;
+			productReference = 8C28A38C2DB7F62000B0E431 /* Morgan_Exam03Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C28A3952DB7F62000B0E431 /* Morgan_Exam03UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C28A3A72DB7F62000B0E431 /* Build configuration list for PBXNativeTarget "Morgan_Exam03UITests" */;
+			buildPhases = (
+				8C28A3922DB7F62000B0E431 /* Sources */,
+				8C28A3932DB7F62000B0E431 /* Frameworks */,
+				8C28A3942DB7F62000B0E431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C28A3982DB7F62000B0E431 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8C28A3992DB7F62000B0E431 /* Morgan_Exam03UITests */,
+			);
+			name = Morgan_Exam03UITests;
+			packageProductDependencies = (
+			);
+			productName = Morgan_Exam03UITests;
+			productReference = 8C28A3962DB7F62000B0E431 /* Morgan_Exam03UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C28A36E2DB7F61F00B0E431 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					8C28A3752DB7F61F00B0E431 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					8C28A38B2DB7F62000B0E431 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 8C28A3752DB7F61F00B0E431;
+					};
+					8C28A3952DB7F62000B0E431 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 8C28A3752DB7F61F00B0E431;
+					};
+				};
+			};
+			buildConfigurationList = 8C28A3712DB7F61F00B0E431 /* Build configuration list for PBXProject "Morgan_Exam03" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C28A36D2DB7F61F00B0E431;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8C28A3772DB7F61F00B0E431 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C28A3752DB7F61F00B0E431 /* Morgan_Exam03 */,
+				8C28A38B2DB7F62000B0E431 /* Morgan_Exam03Tests */,
+				8C28A3952DB7F62000B0E431 /* Morgan_Exam03UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C28A3742DB7F61F00B0E431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C28A38A2DB7F62000B0E431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C28A3942DB7F62000B0E431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C28A3722DB7F61F00B0E431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C28A3882DB7F62000B0E431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C28A3922DB7F62000B0E431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C28A38E2DB7F62000B0E431 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C28A3752DB7F61F00B0E431 /* Morgan_Exam03 */;
+			targetProxy = 8C28A38D2DB7F62000B0E431 /* PBXContainerItemProxy */;
+		};
+		8C28A3982DB7F62000B0E431 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C28A3752DB7F61F00B0E431 /* Morgan_Exam03 */;
+			targetProxy = 8C28A3972DB7F62000B0E431 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8C28A3A02DB7F62000B0E431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Morgan_Exam03/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.edu.Morgan-Exam03";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C28A3A12DB7F62000B0E431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Morgan_Exam03/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.edu.Morgan-Exam03";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C28A3A22DB7F62000B0E431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C28A3A32DB7F62000B0E431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C28A3A52DB7F62000B0E431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.edu.Morgan-Exam03Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morgan_Exam03.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Morgan_Exam03";
+			};
+			name = Debug;
+		};
+		8C28A3A62DB7F62000B0E431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.edu.Morgan-Exam03Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morgan_Exam03.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Morgan_Exam03";
+			};
+			name = Release;
+		};
+		8C28A3A82DB7F62000B0E431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.edu.Morgan-Exam03UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Morgan_Exam03;
+			};
+			name = Debug;
+		};
+		8C28A3A92DB7F62000B0E431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.edu.Morgan-Exam03UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Morgan_Exam03;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C28A3712DB7F61F00B0E431 /* Build configuration list for PBXProject "Morgan_Exam03" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C28A3A22DB7F62000B0E431 /* Debug */,
+				8C28A3A32DB7F62000B0E431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C28A39F2DB7F62000B0E431 /* Build configuration list for PBXNativeTarget "Morgan_Exam03" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C28A3A02DB7F62000B0E431 /* Debug */,
+				8C28A3A12DB7F62000B0E431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C28A3A42DB7F62000B0E431 /* Build configuration list for PBXNativeTarget "Morgan_Exam03Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C28A3A52DB7F62000B0E431 /* Debug */,
+				8C28A3A62DB7F62000B0E431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C28A3A72DB7F62000B0E431 /* Build configuration list for PBXNativeTarget "Morgan_Exam03UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C28A3A82DB7F62000B0E431 /* Debug */,
+				8C28A3A92DB7F62000B0E431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C28A36E2DB7F61F00B0E431 /* Project object */;
+}
