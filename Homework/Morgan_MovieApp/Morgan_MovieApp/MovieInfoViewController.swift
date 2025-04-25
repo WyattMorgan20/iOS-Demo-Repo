@@ -9,13 +9,20 @@ import UIKit
 
 class MovieInfoViewController: UIViewController {
 
+    @IBOutlet weak var movieImageViewOutlet: UIImageView!
+    
+    @IBOutlet weak var movieInfoOutlet: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func showInfoAction(_ sender: UIButton) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
