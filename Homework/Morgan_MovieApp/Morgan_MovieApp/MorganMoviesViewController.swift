@@ -16,7 +16,6 @@ class MorganMoviesViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         genres = [
             Movies(genre: "Action", list_Array: [
@@ -33,6 +32,7 @@ class MorganMoviesViewController: UIViewController, UITableViewDelegate, UITable
                 MovieList(movieName: "The Naked Gun", movieImage: "thenakedgun", movieInfo: "An inept police detective bumbles his way through a criminal conspiracy."),
                 MovieList(movieName: "Airplane", movieImage: "airplane", movieInfo: "A spoof disaster film filled with hilarious gags.")
             ]),
+            
             Movies(genre: "Horror", list_Array: [
                 MovieList(movieName: "Hereditary", movieImage: "hereditary", movieInfo: "A family's dark secrets unfold after the death of their matriarch."),
                 MovieList(movieName: "Halloween", movieImage: "halloween", movieInfo: "A masked killer returns to his hometown to terrorize."),
@@ -40,6 +40,7 @@ class MorganMoviesViewController: UIViewController, UITableViewDelegate, UITable
                 MovieList(movieName: "Midsommar", movieImage: "midsommar", movieInfo: "A couple travels to a rural Swedish festival with dark undertones."),
                 MovieList(movieName: "Black Phone", movieImage: "blackphone", movieInfo: "A kidnapped boy receives calls from past victims on a disconnected phone.")
             ]),
+            
             Movies(genre: "Drama", list_Array: [
                 MovieList(movieName: "Last Breath", movieImage: "lastbreath", movieInfo: "A deep-sea diver struggles to survive with limited air supply while waiting for rescue."),
                 MovieList(movieName: "Parasite", movieImage: "parasite", movieInfo: "A poor family's scheme intertwines with a wealthy household."),
