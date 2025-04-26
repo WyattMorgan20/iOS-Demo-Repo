@@ -7,14 +7,39 @@
 
 import UIKit
 
-class MovieListViewController: UIViewController {
+class MovieListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var movieListTableView: UITableViewCell!
+    @IBOutlet weak var movieListTableView: UITableView!
     
+    var selectedGenre: Movies?
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = selectedGenre?.genre ?? "Movies"
+        movieListTableView.delegate = self
+        movieListTableView.dataSource = self
+    }
 
-        // Do any additional setup after loading the view.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return selectedGenre?.list_Array.count ?? 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "listCell", for: indexPath)
+        cell.textLabel?.text = selectedGenre?.list_Array[indexPath.row].movieName
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "movieInfoSegue", sender: selectedGenre?.list_Array[indexPath.row])
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "movieInfoSegue" {
+            if let destinationVC = segue.destination as? MovieInfoViewController, let selectedMovie = sender as? MovieList {
+                destinationVC.selectedMovie = selectedMovie
+            }
+        }
     }
     
 

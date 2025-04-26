@@ -46,7 +46,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="qg4-x2-kCF"/>
                     <connections>
-                        <outlet property="moviesTableView" destination="Mmp-kl-l35" id="zZ9-WL-iSN"/>
+                        <outlet property="moviesTableView" destination="BbR-GS-rfb" id="qzE-hf-yKq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -90,7 +90,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ulD-nG-FEL"/>
                     <connections>
-                        <outlet property="movieListTableView" destination="iPO-XI-V2z" id="sS4-g0-yyy"/>
+                        <outlet property="movieListTableView" destination="GAx-Vj-KRc" id="TNV-VE-rTV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FBb-6h-1qH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

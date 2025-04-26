@@ -13,14 +13,24 @@ class MovieInfoViewController: UIViewController {
     
     @IBOutlet weak var movieInfoOutlet: UILabel!
     
+    var selectedMovie: MovieList?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = selectedMovie?.movieName
+        movieImageViewOutlet.image = UIImage(named: selectedMovie?.movieImage ?? "")
+        animateImage()
+    }
 
-        // Do any additional setup after loading the view.
+    func animateImage() {
+        movieImageViewOutlet.alpha = 0.0
+        UIView.animate(withDuration: 2.0) {
+            self.movieImageViewOutlet.alpha = 1.0
+        }
     }
     
     @IBAction func showInfoAction(_ sender: UIButton) {
-        
+        movieInfoOutlet.text = selectedMovie?.movieInfo
     }
     
     /*
